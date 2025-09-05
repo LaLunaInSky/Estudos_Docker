@@ -1,10 +1,12 @@
-FROM python:3.12 
+FROM python:3.12
 WORKDIR /app
-COPY . /app
+COPY requirements.txt /app
 RUN python -m venv venv
 RUN /bin/bash -c "source venv/bin/activate && pip install --no-cache-dir -r requirements.txt"
+COPY . /app
 EXPOSE 8080
 CMD /bin/bash -c "source venv/bin/activate && python app.py"
+
 
 # FROM ubuntu:24.04
 # RUN apt-get update && \
