@@ -209,12 +209,12 @@ function getDataViewMemory0() {
     }
     return cachedDataViewMemory0;
 }
-function __wbg_adapter_22(arg0, arg1, arg2) {
-    wasm.closure49_externref_shim(arg0, arg1, arg2);
+function __wbg_adapter_20(arg0, arg1, arg2) {
+    wasm.closure14_externref_shim(arg0, arg1, arg2);
 }
 
-function __wbg_adapter_73(arg0, arg1, arg2, arg3) {
-    wasm.closure65_externref_shim(arg0, arg1, arg2, arg3);
+function __wbg_adapter_59(arg0, arg1, arg2, arg3) {
+    wasm.closure29_externref_shim(arg0, arg1, arg2, arg3);
 }
 
 const __wbindgen_enum_ReadableStreamType = ["bytes"];
@@ -469,7 +469,7 @@ function __wbg_get_imports() {
                 const a = state0.a;
                 state0.a = 0;
                 try {
-                    return __wbg_adapter_73(a, state0.b, arg0, arg1);
+                    return __wbg_adapter_59(a, state0.b, arg0, arg1);
                 } finally {
                     state0.a = a;
                 }
@@ -529,9 +529,6 @@ function __wbg_get_imports() {
         const ret = arg0.view;
         return isLikeNone(ret) ? 0 : addToExternrefTable0(ret);
     };
-    imports.wbg.__wbg_warn_09cd4aea2d2d258b = function(arg0, arg1, arg2) {
-        console.warn(arg0, arg1, arg2);
-    };
     imports.wbg.__wbindgen_cb_drop = function(arg0) {
         const obj = arg0.original;
         if (obj.cnt-- == 1) {
@@ -541,8 +538,8 @@ function __wbg_get_imports() {
         const ret = false;
         return ret;
     };
-    imports.wbg.__wbindgen_closure_wrapper4709 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 48, __wbg_adapter_22);
+    imports.wbg.__wbindgen_closure_wrapper1358 = function(arg0, arg1, arg2) {
+        const ret = makeMutClosure(arg0, arg1, 13, __wbg_adapter_20);
         return ret;
     };
     imports.wbg.__wbindgen_debug_string = function(arg0, arg1) {
@@ -572,10 +569,6 @@ function __wbg_get_imports() {
     };
     imports.wbg.__wbindgen_memory = function() {
         const ret = wasm.memory;
-        return ret;
-    };
-    imports.wbg.__wbindgen_string_new = function(arg0, arg1) {
-        const ret = getStringFromWasm0(arg0, arg1);
         return ret;
     };
     imports.wbg.__wbindgen_throw = function(arg0, arg1) {
