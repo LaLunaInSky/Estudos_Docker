@@ -1,3 +1,5 @@
+# image python 
+
 FROM python:3.12
 WORKDIR /app
 COPY requirements.txt /app
@@ -7,6 +9,8 @@ COPY . /app
 EXPOSE 8080
 CMD /bin/bash -c "source venv/bin/activate && python app.py"
 
+
+# image ubuntu
 
 # FROM ubuntu:24.04
 # RUN apt-get update && \
